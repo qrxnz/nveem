@@ -12,6 +12,8 @@ return {
 		vim.keymap.set("n", "<leader>da", ":DapContinue<CR>", {})
 		vim.keymap.set("n", "<leader>sd", ":DapToggleBreakpoint<CR>", {})
 
+		vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "red", linehl = "", numhl = "" })
+
 		require("dapui").setup()
 		require("dap-go").setup()
 
