@@ -77,7 +77,6 @@ return {
 			"clangd",
 			"tailwindcss",
 			"gopls",
-			"julials",
 			"sqls",
 			"basedpyright",
 		})
