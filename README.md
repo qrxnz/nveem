@@ -1,11 +1,5 @@
 # neovim
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,docker,c,cpp,go,vue,tailwind,py,javascript,typescript,nix,lua,markdown,latex" />
-  </a>
-</p>
-
 My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks  ^‿^
 
 ## Screenshot
