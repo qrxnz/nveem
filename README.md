@@ -7,6 +7,8 @@ My minimal Neovim configuration provides good experience for multiple languages 
 
 ## Installation
 
+- 🐧 Without Nix:
+
 Paste in the terminal to install:
 ```
 git clone https://github.com/qrxnz/neovim.git --depth=1 ~/.config/nvim/ && nvim
