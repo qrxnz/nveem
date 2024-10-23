@@ -8,8 +8,9 @@ My minimal Neovim configuration provides good experience for multiple languages 
 ## Installation
 
 ### ❄️ Nix
+soon ...
 
-### 🐧 Without Nix:
+### 🐧 Without Nix
 
 Paste in the terminal to install:
 ```
