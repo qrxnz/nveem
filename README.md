@@ -8,7 +8,35 @@ My minimal Neovim configuration provides good experience for multiple languages 
 ## ⚒️ Installation
 
 ### ❄️ Nix
-soon ...
+- Try it without installing:
+```sh
+nix run github:qrxnz/nveem
+```
+- Installation:  
+
+Add input in your flake like:  
+```nix
+{
+ inputs = {
+   nveem = {
+     url = "github:qrxnz/nveem";
+     # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
+     inputs.nixpkgs.follows = "nixpkgs";
+   };
+ };
+}
+```
+With the input added you can reference it directly:  
+
+```nix
+{ inputs, system, ... }:
+{
+  # NixOS
+  environment.systemPackages = [ inputs.nveem.packages.${pkgs.system}.default ];
+  # home-manager
+  home.packages = [ inputs.nveem.packages.${pkgs.system}.default ];
+}
+```
 
 ### 🐧 Without Nix
 
