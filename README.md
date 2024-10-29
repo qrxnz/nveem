@@ -51,3 +51,4 @@ git clone https://github.com/qrxnz/nveem.git --depth=1 ~/.config/nvim/ && nvim
 I was inspired by:
 - [IogaMaster](https://github.com/IogaMaster/neovim)
 - [redyf](https://github.com/redyf/Moon)
+- [elythh](https://github.com/elythh/nixvim)
