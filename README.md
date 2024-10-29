@@ -1,4 +1,4 @@
-# neovim
+# nveem
 
 My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks  ^‿^
 
