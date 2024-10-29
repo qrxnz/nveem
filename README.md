@@ -17,4 +17,9 @@ Paste in the terminal to install:
 git clone https://github.com/qrxnz/nveem.git --depth=1 ~/.config/nvim/ && nvim
 ```
 ## 🗒️ Credits
-My config based on [Iogamaster/Neovim](https://github.com/IogaMaster/neovim)
+
+### 🎨 Inspiration
+
+I was inspired by:
+- [IogaMaster](https://github.com/IogaMaster/neovim)
+- [redyf](https://github.com/redyf/Moon)
