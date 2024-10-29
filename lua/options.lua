@@ -28,6 +28,10 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
 
+-- Enable chars list
+vim.opt.list = true -- Show invisible characters (tabs, eol, ...)
+vim.opt.listchars = "eol:↲,tab:|->,lead:·,space: ,trail:•,extends:→,precedes:←,nbsp:␣"
+
 -- Neovide
 if vim.g.neovide then
   vim.o.guifont = 'JetBrains Mono Nerd Font:h14'
