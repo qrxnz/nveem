@@ -20,7 +20,6 @@ Add input in your flake like:
  inputs = {
    nveem = {
      url = "github:qrxnz/nveem";
-     # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
      inputs.nixpkgs.follows = "nixpkgs";
    };
  };
