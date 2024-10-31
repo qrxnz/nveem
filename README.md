@@ -3,7 +3,7 @@
 ## ✒️ Description
 My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks  ^‿^
 
-## 🖼️ Screenshot
+## 🖼️ Gallery
 ![nvim screenshot](./.github/assets/neovim.jpg)
 
 ## ⚒️ Installation
