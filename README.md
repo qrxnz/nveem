@@ -3,7 +3,7 @@
 ## ✒️ Description
 > Personal neovim configuration with nix flake support  
   
-My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks  ^‿^
+My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks  `^‿^`
 
 ## 🖼️ Gallery
 ![nvim screenshot](./.github/assets/neovim.jpg)
