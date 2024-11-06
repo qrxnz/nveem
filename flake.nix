@@ -43,12 +43,9 @@
       devShells.default = pkgs.mkShell {
         nativeBuildInputs = [
           nvim
+          
           # Lua
           pkgs.stylua
-          
-          # Go
-          pkgs.gopls
-          pkgs.delve
         ];
       };
     }
