@@ -39,6 +39,13 @@ With the input added you can reference it directly:
   home.packages = [ inputs.nveem.packages.${pkgs.system}.default ];
 }
 ```
+or
+
+You can install this package imperatively with the following command
+
+```nix
+nix profile install github:qrxnz/nveem
+```
 
 ### 🐧 Without Nix
 
