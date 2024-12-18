@@ -30,9 +30,6 @@ return {
 			"stevearc/conform.nvim",
 		},
 
-		-- Java
-		{'nvim-java/nvim-java'},
-
 		-- Flutter
 		{
 			"akinsho/flutter-tools.nvim",
