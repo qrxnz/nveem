@@ -78,6 +78,7 @@ return {
 			"tailwindcss",
 			"gopls",
 			"sqls",
+			"jdtls",
 			"basedpyright",
 		})
 
@@ -159,6 +160,7 @@ return {
 				markdown = { "mdformat" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
+				java = { "google-java-format" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
