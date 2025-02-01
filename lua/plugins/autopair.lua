@@ -1,4 +1,4 @@
 return {
-  'altermo/ultimate-autopair.nvim',
-  config = true,
+	"altermo/ultimate-autopair.nvim",
+	config = true,
 }

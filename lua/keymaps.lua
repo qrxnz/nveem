@@ -1,5 +1,5 @@
 -- Unset arrow keys
-vim.cmd [[
+vim.cmd([[
     noremap <Left> <Nop>
     noremap <Right> <Nop>
     noremap <Up> <Nop>
@@ -10,9 +10,9 @@ vim.cmd [[
     inoremap <Right> <Nop>
     inoremap <Up> <Nop>
     inoremap <Down> <Nop>
-]]
+]])
 
 -- Enable Mouse
-vim.cmd [[
+vim.cmd([[
     set mouse=a
-]]
+]])

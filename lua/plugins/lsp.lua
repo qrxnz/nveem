@@ -41,8 +41,6 @@ return {
 			config = true,
 		},
 
-		-- Rust
-		{ "simrat39/rust-tools.nvim" },
 		{
 			"saecki/crates.nvim",
 			tag = "v0.4.0",
@@ -78,7 +76,6 @@ return {
 			"tailwindcss",
 			"gopls",
 			"sqls",
-			"jdtls",
 			"basedpyright",
 		})
 
@@ -160,7 +157,6 @@ return {
 				markdown = { "mdformat" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
-				java = { "google-java-format" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
