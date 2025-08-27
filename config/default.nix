@@ -5,7 +5,6 @@
     ./style.nix
     ./telescope.nix
     ./treesitter.nix
-    ./harpoon.nix
     ./folds.nix
     ./lsp.nix
     ./completion.nix
