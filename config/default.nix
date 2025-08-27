@@ -23,7 +23,6 @@
 
     opts = {
       number = true;
-      colorcolumn = "80";
       relativenumber = false;
       shiftwidth = 2;
       tabstop = 2;
@@ -35,7 +34,6 @@
       incsearch = true;
       termguicolors = true;
       scrolloff = 8;
-      signcolumn = "yes";
       updatetime = 50;
       foldlevelstart = 99;
       list = true;
