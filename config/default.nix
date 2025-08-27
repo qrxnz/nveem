@@ -22,7 +22,7 @@
     opts = {
       number = true;
       colorcolumn = "80";
-      relativenumber = true;
+      relativenumber = false;
       shiftwidth = 2;
       tabstop = 2;
       wrap = false;
