@@ -14,7 +14,7 @@
       json = ["prettier"];
       lua = ["stylua"];
       markdown = ["prettier"];
-      nix = ["nixfmt"];
+      nix = ["alejandra"];
       python = ["isort" "black"];
       rust = ["rustfmt"];
       sh = ["shfmt"];

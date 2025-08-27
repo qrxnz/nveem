@@ -55,7 +55,7 @@
       golines
       gotools
       isort
-      nixfmt-rfc-style
+      alejandra
       nodePackages.prettier
       prettierd
       rustfmt
