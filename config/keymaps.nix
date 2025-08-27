@@ -238,7 +238,7 @@
       };
     }
     {
-      key = "<leader>B";
+      key = "<leader>sd";
       mode = "n";
       action = ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>";
       options = {
@@ -258,7 +258,7 @@
       };
     }
     {
-      key = "<leader>de";
+      key = "<leader>re";
       mode = "n";
       action = ":lua require'dap'.repl.open()<CR>";
       options = {
