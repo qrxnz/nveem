@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   plugins.lsp = {
     servers = {
       bashls.enable = true;
