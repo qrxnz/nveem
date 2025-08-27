@@ -38,6 +38,9 @@
       signcolumn = "yes";
       updatetime = 50;
       foldlevelstart = 99;
+      list = true;
+      listchars = "eol:↲,tab:|->,lead:·,space: ,trail:•,extends:→,precedes:←,nbsp:␣";
+
     };
 
     plugins = {
