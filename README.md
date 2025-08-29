@@ -2,7 +2,7 @@
 
 ## ✒️ Description
 
-> Personal neovim configuration with nix flake support
+> Neovim configuration buit with nixvim
 
 My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks  `^‿^`
 
@@ -55,14 +55,6 @@ You can install this package imperatively with the following command;
 nix profile install github:qrxnz/nveem
 ```
 
-### 🐧 Without Nix
-
-Paste in the terminal to install:
-
-```
-git clone https://github.com/qrxnz/nveem.git --depth=1 ~/.config/nvim/ && nvim
-```
-
 ## 🗒️ Credits
 
 ### 🎨 Inspiration
@@ -72,3 +64,4 @@ I was inspired by:
 - [IogaMaster](https://github.com/IogaMaster/neovim)
 - [redyf](https://github.com/redyf/Moon)
 - [elythh](https://github.com/elythh/nixvim)
+- [pete3n](https://github.com/pete3n/nixvim-flake/tree/main)
