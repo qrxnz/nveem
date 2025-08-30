@@ -38,7 +38,6 @@
       foldlevelstart = 99;
       list = true;
       listchars = "eol:↲,tab:|->,lead:·,space: ,trail:•,extends:→,precedes:←,nbsp:␣";
-
     };
 
     plugins = {
