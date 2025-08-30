@@ -47,6 +47,13 @@
       oil.enable = true;
       undotree.enable = true;
       fugitive.enable = true;
+
+      markdown-preview = {
+        enable = true;
+        settings = {
+          browser = "Brave\ Browser";
+        };
+      };
     };
     extraPackages = with pkgs; [
       # Formatters
