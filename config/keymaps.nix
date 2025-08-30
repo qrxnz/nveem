@@ -21,6 +21,16 @@
       };
     }
     {
+      key = "<leader>tr";
+      mode = "n";
+      action = "<cmd>Neotree float<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Explorer NeoTree (cwd)";
+      };
+    }
+    {
       key = "<leader>gs";
       mode = "n";
       action = "<cmd>Git<CR>";

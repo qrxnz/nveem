@@ -14,6 +14,7 @@
     ./format.nix
     ./lint.nix
     ./debug.nix
+    ./neotree.nix
   ];
 
   config = {
@@ -46,7 +47,6 @@
       oil.enable = true;
       undotree.enable = true;
       fugitive.enable = true;
-      nvim-tree.enable = true;
     };
     extraPackages = with pkgs; [
       # Formatters
