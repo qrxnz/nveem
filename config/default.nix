@@ -35,7 +35,6 @@
       incsearch = true;
       termguicolors = true;
       scrolloff = 8;
-      showtabline = 2;
       updatetime = 50;
       foldlevelstart = 99;
       list = true;
