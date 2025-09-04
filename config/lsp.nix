@@ -19,7 +19,6 @@
       };
       tsserver.enable = true;
       yamlls.enable = true;
-      zls.enable = true;
     };
   };
   extraPlugins = with pkgs.vimPlugins; [
@@ -38,7 +37,7 @@
       			action = vim.lsp.buf.hover,
       			options = {
       				buffer = 0,
-      				desc = "hover [K]noledge with LSP",
+      				desc = "hover Knoledge with LSP",
       			},
       		},
       		{
@@ -46,7 +45,7 @@
       			action = vim.lsp.buf.definition,
       			options = {
       				buffer = 0,
-      				desc = "[g]o to [d]efinition with LSP",
+      				desc = "go to definition with LSP",
       			},
       		},
       		{
@@ -54,7 +53,7 @@
       			action = vim.lsp.buf.type_definition,
       			options = {
       				buffer = 0,
-      				desc = "[g]o to t[y]pe definition with LSP",
+      				desc = "go to type definition with LSP",
       			},
       		},
       		{
@@ -62,7 +61,7 @@
       			action = vim.lsp.buf.implementation,
       			options = {
       				buffer = 0,
-      				desc = "[g]o to [i]mplementation with LSP",
+      				desc = "go to implementation with LSP",
       			},
       		},
       		{
@@ -70,7 +69,7 @@
       			action = vim.diagnostic.goto_next,
       			options = {
       				buffer = 0,
-      				desc = "Go to next [d]iagnostic with LSP",
+      				desc = "Go to next diagnostic with LSP",
       			},
       		},
       		{
@@ -78,7 +77,7 @@
       			action = vim.diagnostic.goto_prev,
       			options = {
       				buffer = 0,
-      				desc = "Go to previous [d]iagnostic with LSP",
+      				desc = "Go to previous diagnostic with LSP",
       			},
       		},
       		{
@@ -86,7 +85,7 @@
       			action = vim.lsp.buf.rename,
       			options = {
       				buffer = 0,
-      				desc = "[r]ename variable with LSP",
+      				desc = "rename variable with LSP",
       			},
       		},
       	}

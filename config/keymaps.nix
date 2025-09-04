@@ -1,16 +1,6 @@
 {pkgs, ...}: {
   keymaps = [
     {
-      key = "<leader>pv";
-      mode = "n";
-      action = "<cmd>Oil<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "[p]roject [v]iew";
-      };
-    }
-    {
       key = "<leader>u";
       mode = "n";
       action = "<cmd>UndotreeToggle<CR>";
@@ -31,111 +21,6 @@
       };
     }
     {
-      key = "<leader>gs";
-      mode = "n";
-      action = "<cmd>Git<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "[g]it [s]tatus";
-      };
-    }
-    {
-      key = "<C-y>";
-      mode = "n";
-      action = ":set cursorcolumn!<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Toggle vertical column because [Y]AML sucks";
-      };
-    }
-    {
-      key = "J";
-      mode = "v";
-      action = ":m '>+1<CR>gv=gv";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Shift line down 1 in visual mode";
-      };
-    }
-    {
-      key = "K";
-      mode = "v";
-      action = ":m '<-2<CR>gv=gv";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Shift line up 1 in visual mode";
-      };
-    }
-    {
-      key = "J";
-      mode = "n";
-      action = "mzJ\`z"; # Keep cursor to the left
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      key = "<C-d>";
-      mode = "n";
-      action = "<C-d>zz"; # Keep cursor in middle
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      key = "<C-u>";
-      mode = "n";
-      action = "<C-u>zz"; # Keep cursor in middle
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      key = "n";
-      mode = "n";
-      action = "nzzzv"; # Keep cursor in middle
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      key = "N";
-      mode = "n";
-      action = "Nzzzv";
-      options = {
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      key = "<leader>p";
-      mode = "x";
-      action = "\"_dP";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "[p]reserve put";
-      };
-    }
-    {
-      key = "<leader>y";
-      mode = ["n" "v"];
-      action = "\"+y";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "[y]ank to system clipboard";
-      };
-    }
-    {
       key = "<leader>Y";
       mode = "n";
       action = "\"+Y";
@@ -143,26 +28,6 @@
         silent = true;
         noremap = true;
         desc = "[Y]ank line to system clipboard";
-      };
-    }
-    {
-      key = "Q";
-      mode = "n";
-      action = "<nop>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Don't";
-      };
-    }
-    {
-      key = "<C-f>";
-      mode = "n";
-      action = "<cmd>!tmux neww tmux-sessionizer<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "[f]ind and switch tmux session";
       };
     }
     {
@@ -212,7 +77,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "[m]ake [p]retty by formatting";
+        desc = "make pretty by formatting";
       };
     }
     {
@@ -222,7 +87,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "[d]iagnostic changes [a]ccepted";
+        desc = "diagnostic changes accepted";
       };
     }
     {
@@ -232,7 +97,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "Toggle nvim [t]ree";
+        desc = "Toggle nvim tree";
       };
     }
 
@@ -244,7 +109,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "Toggle DAP [b]reakpoint";
+        desc = "Toggle DAP breakpoint";
       };
     }
     {
@@ -254,7 +119,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "Set DAP [B]reakpoint";
+        desc = "Set DAP Breakpoint";
       };
     }
     {
@@ -264,7 +129,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "DAP [d]ebug [t]est for (g)o";
+        desc = "DAP debug test for (g)o";
       };
     }
     {
@@ -274,7 +139,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "[d]ap r[e]pl open";
+        desc = "dap repl open";
       };
     }
     {
@@ -284,7 +149,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "[l]og DAP [p]oint message";
+        desc = "log DAP [p]oint message";
       };
     }
     {

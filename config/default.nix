@@ -43,7 +43,6 @@
 
     plugins = {
       gitsigns.enable = true;
-      oil.enable = true;
       undotree.enable = true;
       fugitive.enable = true;
 
@@ -114,7 +113,6 @@
         then null
         else rr
       ) # Not supported on MacOS
-      tmux-sessionizer
       typescript
       zig
     ];
