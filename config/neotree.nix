@@ -21,12 +21,10 @@
         "<space>" = "none";
       };
     };
-    settings = {
-      filesystem = {
-        filtered_items = {
-          visible = true;
-          hide_dotfiles = false;
-        };
+    filesystem = {
+      filteredItems = {
+        visible = true;
+        hideDotfiles = false;
       };
     };
   };
