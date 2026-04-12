@@ -21,5 +21,11 @@
         "<space>" = "none";
       };
     };
+    filesystem = {
+      filteredItems = {
+        visible = true;
+        hideDotfiles = false;
+      };
+    };
   };
 }
