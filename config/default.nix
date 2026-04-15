@@ -23,8 +23,7 @@
     };
 
     opts = {
-      number = true;
-      relativenumber = false;
+      relativenumber = true;
       shiftwidth = 2;
       tabstop = 2;
       wrap = false;
