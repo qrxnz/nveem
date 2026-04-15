@@ -4,7 +4,7 @@
 
 > Neovim configuration buit with nixvim
 
-My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks  `^‿^`
+My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks `^‿^`
 
 ## 🖼️ Gallery
 
@@ -49,7 +49,7 @@ With the input added you can reference it directly:
 
 or
 
-You can install this package imperatively with the following command;
+You can install this package imperatively with the following command:
 
 ```nix
 nix profile install github:qrxnz/nveem
