@@ -22,6 +22,13 @@
               		['<C-e>'] = cmp.mapping.close(),
               		['<C-space>'] = cmp.mapping.complete(),
               		['<C-y>'] = cmp.mapping.confirm({ select = true }),
+              		['<Tab>'] = cmp.mapping(function(fallback)
+              			if cmp.visible() then
+              				cmp.confirm({ select = true })
+              			else
+              				fallback()
+              			end
+              		end, { "i", "s" }),
               	})
             '';
         };
