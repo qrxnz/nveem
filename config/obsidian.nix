@@ -5,7 +5,7 @@
       workspaces = [
         {
           name = "default";
-          path = "~/obsidian";
+          path = "~/Documents/SecondBrain";
         }
       ];
       completion = {
