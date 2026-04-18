@@ -16,6 +16,7 @@
     ./debug.nix
     ./neotree.nix
     ./obsidian.nix
+    ./render-markdown.nix
   ];
 
   config = {

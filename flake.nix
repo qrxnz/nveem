@@ -63,8 +63,19 @@
           });
         };
 
+        render-markdown-nvim_overlay = final: prev: {
+          vimPlugins =
+            prev.vimPlugins
+            // {
+              render-markdown-nvim = pkgs-unstable.vimPlugins.render-markdown-nvim;
+            };
+        };
+
         pkgsWithOverlays = pkgs.extend (
-          final: prev: asm-lsp-darwin_overlay final prev // bashdb-darwin_overlay final prev
+          final: prev:
+            asm-lsp-darwin_overlay final prev
+            // bashdb-darwin_overlay final prev
+            // render-markdown-nvim_overlay final prev
         );
 
         nixvimLib = nixvim.lib.${system};
