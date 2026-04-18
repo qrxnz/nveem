@@ -15,9 +15,7 @@
       mappings = {
         # Overrides the 'gf' mapping to work with obsidian.nvim
         gf = {
-          action = {
-            __raw = "function() return require('obsidian').util.gf_passthrough() end";
-          };
+          action = "require('obsidian').util.gf_passthrough";
           opts = {
             noremap = false;
             expr = true;
@@ -26,9 +24,7 @@
         };
         # Toggle check-boxes
         "<leader>ch" = {
-          action = {
-            __raw = "function() return require('obsidian').util.toggle_checkbox() end";
-          };
+          action = "require('obsidian').util.toggle_checkbox";
           opts = {
             buffer = true;
           };
