@@ -15,6 +15,7 @@
     ./lint.nix
     ./debug.nix
     ./neotree.nix
+    ./obsidian.nix
   ];
 
   config = {
