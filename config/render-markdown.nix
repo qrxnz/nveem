@@ -47,14 +47,19 @@
           "RenderMarkdownBullet",
         }
         for _, group in ipairs(groups) do
-          vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
+          local hl = vim.api.nvim_get_hl(0, { name = group })
+          hl.bg = "NONE"
+          hl.ctermbg = "NONE"
+          vim.api.nvim_set_hl(0, group, hl)
         end
       end
 
-      set_markdown_transparency()
+      vim.schedule(set_markdown_transparency)
 
       vim.api.nvim_create_autocmd("ColorScheme", {
-        callback = set_markdown_transparency,
+        callback = function()
+          vim.schedule(set_markdown_transparency)
+        end,
       })
     '';
 }
