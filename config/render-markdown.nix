@@ -8,9 +8,12 @@
     ''
       require('render-markdown').setup({
         heading = {
-          backgrounds = { "Normal", "Normal", "Normal", "Normal", "Normal", "Normal" },
+          -- Disable solid backgrounds for headings
+          backgrounds = {},
         },
         code = {
+          -- Use 'none' style to avoid solid background bars
+          style = 'none',
           highlight = "Normal",
           highlight_inline = "Normal",
         },
@@ -18,9 +21,12 @@
           head = "Normal",
           row = "Normal",
         },
+        padding = {
+          highlight = "Normal",
+        },
       })
 
-      -- Link internal highlight groups to Normal to ensure transparency
+      -- Force transparency for internal highlight groups
       local function set_markdown_transparency()
         local groups = {
           "RenderMarkdownCode",
@@ -33,9 +39,15 @@
           "RenderMarkdownH4Bg",
           "RenderMarkdownH5Bg",
           "RenderMarkdownH6Bg",
+          "RenderMarkdownCodeBorder",
+          "RenderMarkdownSign",
+          "RenderMarkdownDash",
+          "RenderMarkdownMath",
+          "RenderMarkdownInlineHighlight",
+          "RenderMarkdownCodeLanguage",
         }
         for _, group in ipairs(groups) do
-          vim.api.nvim_set_hl(0, group, { link = "Normal" })
+          vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
         end
       end
 
