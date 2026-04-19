@@ -8,20 +8,16 @@
     ''
       require('render-markdown').setup({
         heading = {
-          -- Keep default backgrounds but we will override their highlights for transparency
+          -- Disable background highlights for headings
+          backgrounds = {},
         },
         code = {
           -- Restore default style to keep icons/labels
           style = 'full',
-          highlight = "Normal",
-          highlight_inline = "Normal",
         },
         pipe_table = {
-          head = "Normal",
-          row = "Normal",
         },
         padding = {
-          highlight = "Normal",
         },
       })
 
@@ -38,6 +34,12 @@
           "RenderMarkdownH4Bg",
           "RenderMarkdownH5Bg",
           "RenderMarkdownH6Bg",
+          "RenderMarkdownH1",
+          "RenderMarkdownH2",
+          "RenderMarkdownH3",
+          "RenderMarkdownH4",
+          "RenderMarkdownH5",
+          "RenderMarkdownH6",
           "RenderMarkdownCodeBorder",
           "RenderMarkdownSign",
           "RenderMarkdownDash",
@@ -47,7 +49,7 @@
           "RenderMarkdownBullet",
         }
         for _, group in ipairs(groups) do
-          local hl = vim.api.nvim_get_hl(0, { name = group })
+          local hl = vim.api.nvim_get_hl(0, { name = group, link = false })
           hl.bg = "NONE"
           hl.ctermbg = "NONE"
           vim.api.nvim_set_hl(0, group, hl)
