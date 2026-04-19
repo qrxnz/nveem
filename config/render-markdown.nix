@@ -8,12 +8,11 @@
     ''
       require('render-markdown').setup({
         heading = {
-          -- Disable solid backgrounds for headings
-          backgrounds = {},
+          -- Keep default backgrounds but we will override their highlights for transparency
         },
         code = {
-          -- Use 'none' style to avoid solid background bars
-          style = 'none',
+          -- Restore default style to keep icons/labels
+          style = 'full',
           highlight = "Normal",
           highlight_inline = "Normal",
         },
@@ -45,6 +44,7 @@
           "RenderMarkdownMath",
           "RenderMarkdownInlineHighlight",
           "RenderMarkdownCodeLanguage",
+          "RenderMarkdownBullet",
         }
         for _, group in ipairs(groups) do
           vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
