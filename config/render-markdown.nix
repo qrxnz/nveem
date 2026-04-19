@@ -14,10 +14,13 @@
         code = {
           -- Restore default style to keep icons/labels
           style = 'full',
+          highlight = 'Normal',
         },
         pipe_table = {
+          highlight = 'Normal',
         },
         padding = {
+          highlight = 'Normal',
         },
       })
 
@@ -28,6 +31,7 @@
           "RenderMarkdownCodeInline",
           "RenderMarkdownTableHead",
           "RenderMarkdownTableRow",
+          "RenderMarkdownTableFill",
           "RenderMarkdownH1Bg",
           "RenderMarkdownH2Bg",
           "RenderMarkdownH3Bg",
@@ -47,12 +51,16 @@
           "RenderMarkdownInlineHighlight",
           "RenderMarkdownCodeLanguage",
           "RenderMarkdownBullet",
+          "RenderMarkdownPadding",
+          "RenderMarkdownQuote",
         }
         for _, group in ipairs(groups) do
-          local hl = vim.api.nvim_get_hl(0, { name = group, link = false })
-          hl.bg = "NONE"
-          hl.ctermbg = "NONE"
-          vim.api.nvim_set_hl(0, group, hl)
+          local hl = vim.api.nvim_get_hl(0, { name = group, link = true })
+          local new_hl = {}
+          for k, v in pairs(hl) do new_hl[k] = v end
+          new_hl.bg = "NONE"
+          new_hl.ctermbg = "NONE"
+          vim.api.nvim_set_hl(0, group, new_hl)
         end
       end
 
