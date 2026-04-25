@@ -129,7 +129,7 @@
       options = {
         silent = true;
         noremap = true;
-        desc = "DAP debug test for (g)o";
+        desc = "DAP debug test for go";
       };
     }
     {
