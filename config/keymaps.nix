@@ -21,6 +21,16 @@
       };
     }
     {
+      key = "<leader>oo";
+      mode = "n";
+      action = "<cmd>ObsidianQuickSwitch<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Open obsidian note";
+      };
+    }
+    {
       key = "<leader>Y";
       mode = "n";
       action = "\"+Y";
