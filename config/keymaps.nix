@@ -41,6 +41,16 @@
       };
     }
     {
+      key = "<leader>on";
+      mode = "n";
+      action = "<cmd>ObsidianNew<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Create new note";
+      };
+    }
+    {
       key = "<leader>Y";
       mode = "n";
       action = "\"+Y";
