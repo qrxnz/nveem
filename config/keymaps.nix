@@ -31,6 +31,16 @@
       };
     }
     {
+      key = "<leader>ot";
+      mode = "n";
+      action = "<cmd>ObsidianTags<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Open obsidian tags";
+      };
+    }
+    {
       key = "<leader>Y";
       mode = "n";
       action = "\"+Y";
