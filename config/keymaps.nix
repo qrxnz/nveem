@@ -21,36 +21,6 @@
       };
     }
     {
-      key = "<leader>oo";
-      mode = "n";
-      action = "<cmd>ObsidianQuickSwitch<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Open obsidian note";
-      };
-    }
-    {
-      key = "<leader>ot";
-      mode = "n";
-      action = "<cmd>ObsidianTags<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Open obsidian tags";
-      };
-    }
-    {
-      key = "<leader>on";
-      mode = "n";
-      action = "<cmd>ObsidianNew<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Create new note";
-      };
-    }
-    {
       key = "<leader>Y";
       mode = "n";
       action = "\"+Y";
