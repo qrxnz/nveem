@@ -1,26 +1,20 @@
 # nveem
 
-## ✒️ Description
-
 > Neovim configuration buit with nixvim
 
 My minimal Neovim configuration provides good experience for multiple languages and facilitates DevOps-related tasks `^‿^`
-
-## 🖼️ Gallery
 
 ![nvim screenshot](./.github/assets/neovim.jpg)
 
 ## ⚒️ Installation
 
-### ❄️ Nix
+- **Run without installing**
 
-- Try it without installing:
-
-```sh
+```bash
 nix run github:qrxnz/nveem
 ```
 
-- Installation:
+- **Add to a Nix Flake**
 
 Add input in your flake like:
 
@@ -47,11 +41,9 @@ With the input added you can reference it directly:
 }
 ```
 
-or
+- **Install imperatively**
 
-You can install this package imperatively with the following command:
-
-```nix
+```bash
 nix profile install github:qrxnz/nveem
 ```
 
