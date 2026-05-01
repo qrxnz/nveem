@@ -99,9 +99,10 @@
 
             # Formatters
             pkgs.stylua
-            pkgs.mdformat
+            pkgs.prettier
             pkgs.alejandra
             pkgs.treefmt
+            pkgs.taplo
           ];
         };
       };

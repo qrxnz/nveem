@@ -6,6 +6,12 @@ includes = ["*.nix"]
 command = "stylua"
 includes = ["*.lua"]
 
-[formatter.markdown]
-command = "mdformat"
-includes = ["*.md"]
+[formatter.prettier]
+command = "prettier"
+options = ["--write"]
+includes = ["*.yaml", "*.yml", "*.md"]
+
+[formatter.toml]
+command = "taplo"
+options = ["format"]
+includes = ["*.toml"]
