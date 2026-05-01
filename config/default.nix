@@ -14,6 +14,7 @@
     ./format.nix
     ./lint.nix
     ./debug.nix
+    ./neotest.nix
     ./neotree.nix
     ./render-markdown.nix
   ];
