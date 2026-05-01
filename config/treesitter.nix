@@ -1,20 +1,22 @@
 {pkgs, ...}: {
   plugins.treesitter = {
     enable = true;
-    indent = true;
-    incrementalSelection = {
-      enable = true;
-      keymaps = {
-        initSelection = "<C-space>";
-        nodeIncremental = "<C-space>";
-        nodeDecremental = "<bs>";
+    settings = {
+      indent.enable = true;
+      incremental_selection = {
+        enable = true;
+        keymaps = {
+          init_selection = "<C-space>";
+          node_incremental = "<C-space>";
+          node_decremental = "<bs>";
+        };
       };
     };
   };
 
   plugins.treesitter-textobjects = {
     enable = true;
-    extraOptions = {
+    settings = {
       select = {
         enable = true;
         lookahead = true;

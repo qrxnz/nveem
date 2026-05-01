@@ -1,13 +1,9 @@
 {pkgs, ...}: {
-  plugins.dap = {
-    enable = true;
-    extensions = {
-      dap-ui.enable = true;
-      dap-virtual-text.enable = true;
-      dap-go.enable = true;
-      dap-python.enable = true;
-    };
-  };
+  plugins.dap.enable = true;
+  plugins.dap-ui.enable = true;
+  plugins.dap-virtual-text.enable = true;
+  plugins.dap-go.enable = true;
+  plugins.dap-python.enable = true;
 
   extraPlugins = with pkgs.vimPlugins; [
     nvim-gdb
@@ -37,7 +33,7 @@
 
         dap.adapters.lldb = {
             type = 'executable',
-            command = '${pkgs.lldb_17}/bin/lldb-vscode', -- adjust as needed, must be absolute path
+            command = '${pkgs.lldb_18}/bin/lldb-dap', -- adjust as needed, must be absolute path
             name = 'lldb'
         }
 

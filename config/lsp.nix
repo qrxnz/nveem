@@ -8,16 +8,16 @@
       gopls.enable = true;
       html.enable = true;
       jsonls.enable = true;
-      lua-ls.enable = true;
+      lua_ls.enable = true;
       nixd.enable = true;
       prismals.enable = true;
-      ruff-lsp.enable = true;
-      rust-analyzer = {
+      ruff_lsp.enable = true;
+      rust_analyzer = {
         enable = true;
         installCargo = true;
         installRustc = true;
       };
-      tsserver.enable = true;
+      ts_ls.enable = true;
       yamlls.enable = true;
     };
   };

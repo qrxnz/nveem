@@ -2,9 +2,9 @@
   description = "A nixvim configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:/nixos/nixpkgs/nixos-unstable";
-    nixvim.url = "github:nix-community/nixvim/nixos-24.05";
+    nixvim.url = "github:nix-community/nixvim/nixos-25.11";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
@@ -35,9 +35,7 @@
             buildInputs =
               oldAttrs.buildInputs
               ++ final.lib.optionals final.stdenv.isDarwin [
-                final.darwin.apple_sdk.frameworks.CoreFoundation
-                final.darwin.apple_sdk.frameworks.CoreServices
-                final.darwin.apple_sdk.frameworks.SystemConfiguration
+                final.apple-sdk
               ];
 
             # tests expect ~/.cache/asm-lsp to be writable
@@ -103,7 +101,7 @@
             pkgs.stylua
             pkgs.mdformat
             pkgs.alejandra
-            pkgs.treefmt2
+            pkgs.treefmt
           ];
         };
       };

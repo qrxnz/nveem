@@ -46,6 +46,7 @@
       gitsigns.enable = true;
       undotree.enable = true;
       fugitive.enable = true;
+      web-devicons.enable = true;
 
       markdown-preview = {
         enable = true;
@@ -78,7 +79,6 @@
       html-tidy
       luajitPackages.luacheck
       markdownlint-cli
-      nodePackages.jsonlint
       pylint
       ruff
       shellcheck
@@ -96,16 +96,12 @@
         else gdb
       ) # Not supported on MacOS
       go
-      lldb_17
-      llvmPackages_17.bintools-unwrapped
+      lldb_18
+      llvmPackages_18.bintools-unwrapped
       marksman
 
-      (nerdfonts.override {
-        fonts = [
-          "JetBrainsMono"
-          "RobotoMono"
-        ];
-      })
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.roboto-mono
 
       python3
       ripgrep
