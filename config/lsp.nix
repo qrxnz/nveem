@@ -25,7 +25,10 @@
         enable = true;
         settings.nixd.formatting.command = ["nixfmt"];
       };
-      prismals.enable = true;
+      prismals = {
+        enable = true;
+        package = pkgs.prisma-language-server;
+      };
       ruff.enable = true;
       rust_analyzer = {
         enable = true;
