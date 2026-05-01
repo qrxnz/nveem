@@ -199,7 +199,7 @@
       })
 
       -- Python LSP
-      require("lspconfig").ruff_lsp.setup({
+      require("lspconfig").ruff.setup({
       	on_attach = function()
       		set_cmn_lsp_keybinds()
       	end,
@@ -223,7 +223,7 @@
       })
 
       -- Typescript/Javascript LSP
-      require("lspconfig").tsserver.setup({
+      require("lspconfig").ts_ls.setup({
       	on_attach = function()
       		set_cmn_lsp_keybinds()
       	end,
