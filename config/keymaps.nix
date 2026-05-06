@@ -80,26 +80,6 @@
         desc = "make pretty by formatting";
       };
     }
-    {
-      key = "<leader>da";
-      mode = "n";
-      action = ":lua vim.lsp.buf.code_action()<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "diagnostic changes accepted";
-      };
-    }
-    {
-      key = "<leader>t";
-      mode = "n";
-      action = "<cmd>NvimTreeToggle<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Toggle nvim tree";
-      };
-    }
 
     # DAP Debugging
     {
@@ -110,16 +90,6 @@
         silent = true;
         noremap = true;
         desc = "Toggle DAP breakpoint";
-      };
-    }
-    {
-      key = "<leader>sd";
-      mode = "n";
-      action = ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Set DAP Breakpoint";
       };
     }
     {
