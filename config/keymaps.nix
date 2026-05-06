@@ -133,6 +133,16 @@
       };
     }
     {
+      key = "<leader>du";
+      mode = "n";
+      action = ":lua require'dapui'.toggle()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Toggle DAP UI";
+      };
+    }
+    {
       key = "<leader>re";
       mode = "n";
       action = ":lua require'dap'.repl.open()<CR>";
