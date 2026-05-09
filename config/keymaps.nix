@@ -80,6 +80,16 @@
         desc = "make pretty by formatting";
       };
     }
+    {
+      key = "<leader>ai";
+      mode = "n";
+      action = ":lua opencode_toggle_narrow()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Toggle opencode";
+      };
+    }
 
     # DAP Debugging
     {

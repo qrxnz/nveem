@@ -14,26 +14,4 @@
     end
   '';
 
-  keymaps = [
-    {
-      key = "<leader>ai";
-      mode = ["n" "x"];
-      action = ":lua require('opencode').ask('@this: ', { submit = true })<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Ask opencode";
-      };
-    }
-    {
-      key = "<leader>at";
-      mode = "n";
-      action = ":lua opencode_toggle_narrow()<CR>";
-      options = {
-        silent = true;
-        noremap = true;
-        desc = "Toggle opencode";
-      };
-    }
-  ];
 }
