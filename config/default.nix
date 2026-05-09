@@ -17,6 +17,7 @@
     ./neotest.nix
     ./neotree.nix
     ./render-markdown.nix
+    ./opencode.nix
   ];
 
   config = {
