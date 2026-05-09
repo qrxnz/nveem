@@ -90,6 +90,16 @@
         desc = "Toggle opencode";
       };
     }
+    {
+      key = "<leader>aa";
+      mode = ["n" "x"];
+      action = ":lua require('opencode').ask('@this: ', { submit = true })<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Ask opencode";
+      };
+    }
 
     # DAP Debugging
     {
