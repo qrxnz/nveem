@@ -81,6 +81,26 @@
       };
     }
     {
+      key = "<leader>oa";
+      mode = "n";
+      action = "<cmd>lua open_neorg_agenda()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Open Neorg agenda";
+      };
+    }
+    {
+      key = "<leader>on";
+      mode = "n";
+      action = "<cmd>lua new_neorg_note()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "New Neorg note";
+      };
+    }
+    {
       key = "<leader>ai";
       mode = "n";
       action = ":lua opencode_toggle_narrow()<CR>";
