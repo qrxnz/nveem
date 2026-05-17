@@ -29,7 +29,7 @@
         local dirman = neorg.modules.get_module("core.dirman")
         local summary = neorg.modules.get_module("core.summary")
         local workspace = dirman.get_current_workspace()
-        local destination = workspace[2] / "agenda.norg"
+        local destination = workspace[2] / "index.norg"
 
         if not destination:exists() then
           dirman.create_file("agenda")
