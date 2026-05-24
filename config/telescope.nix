@@ -44,6 +44,12 @@
           desc = "[s]earch by [g]rep";
         };
       };
+      "<leader>rg" = {
+        action = "live_grep";
+        options = {
+          desc = "live grep with ripgrep";
+        };
+      };
       "<leader>sd" = {
         action = "diagnostics";
         options = {
