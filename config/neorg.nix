@@ -65,7 +65,7 @@
         "core.dirman" = {
           config = {
             workspaces = {
-              secondbrain = "~/Documents/SecondBrain";
+              secondbrain = "~/Documents/knowledge";
             };
             default_workspace = "secondbrain";
           };
