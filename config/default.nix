@@ -69,7 +69,7 @@
       gotools
       isort
       alejandra
-      nodePackages.prettier
+      prettier
       prettierd
       rustfmt
       shfmt
