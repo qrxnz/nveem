@@ -62,6 +62,12 @@
           desc = "[s]earch [k]eymaps";
         };
       };
+      "<leader>gb" = {
+        action = "git_branches";
+        options = {
+          desc = "[g]it [b]ranches";
+        };
+      };
     };
   };
 }
