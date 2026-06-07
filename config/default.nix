@@ -37,6 +37,7 @@
       hlsearch = false;
       incsearch = true;
       termguicolors = true;
+      background = "light";
       scrolloff = 8;
       updatetime = 50;
       foldlevelstart = 99;
