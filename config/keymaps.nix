@@ -81,23 +81,73 @@
       };
     }
     {
-      key = "<leader>ai";
+      key = "<leader>ac";
       mode = "n";
-      action = ":lua opencode_toggle_narrow()<CR>";
+      action = "<cmd>ClaudeCode<CR>";
       options = {
         silent = true;
         noremap = true;
-        desc = "Toggle opencode";
+        desc = "Toggle Claude Code";
+      };
+    }
+    {
+      key = "<leader>af";
+      mode = "n";
+      action = "<cmd>ClaudeCodeFocus<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Focus Claude Code";
+      };
+    }
+    {
+      key = "<leader>ar";
+      mode = "n";
+      action = "<cmd>ClaudeCode --resume<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Resume Claude Code";
+      };
+    }
+    {
+      key = "<leader>ab";
+      mode = "n";
+      action = "<cmd>ClaudeCodeAdd %<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Add current buffer to Claude";
+      };
+    }
+    {
+      key = "<leader>as";
+      mode = "v";
+      action = "<cmd>ClaudeCodeSend<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Send selection to Claude";
       };
     }
     {
       key = "<leader>aa";
-      mode = ["n" "x"];
-      action = ":lua require('opencode').ask('@this: ', { submit = true })<CR>";
+      mode = "n";
+      action = "<cmd>ClaudeCodeDiffAccept<CR>";
       options = {
         silent = true;
         noremap = true;
-        desc = "Ask opencode";
+        desc = "Accept Claude diff";
+      };
+    }
+    {
+      key = "<leader>ad";
+      mode = "n";
+      action = "<cmd>ClaudeCodeDiffDeny<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Deny Claude diff";
       };
     }
 
